@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Blog - Register</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .register-container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #10c984;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #10c984;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #10c984;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0eae72;
+    }
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .login-link a {
+      color: #10c984;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Create Your Blog Account</h2>
+    <form action="/register" method="POST">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Create Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <div class="login-link">
+      Already a member? <a href="login.html">Login here</a>
+    </div>
+  </div>
+</body>
+</html>
